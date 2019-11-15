@@ -19,7 +19,6 @@ defaults write NSGlobalDomain InitialKeyRepeat -int 10
 echo "Showing ~/Library directory"
 chflags nohidden ~/Library
 
-
 echo "Setting columns view as default in Finder"
 defaults write com.apple.Finder FXPreferredViewStyle clmv
 
@@ -35,8 +34,16 @@ defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
 echo "Enabling auto-hiding of Dock"
 defaults write com.apple.dock autohide -bool true
 
-echo "Installing rustup"
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+echo "Resetting Finder and Dock"
+killAll Finder
+killAll Dock
+
+echo "Setting up symlnks"
+mkdir -p ~/.config
+ln -s "$(realpath alacritty)" ~/.config/alacritty
+ln -s "$(realpath fish)" ~/.config/fish
+
+open "http://firefox.com"
 
 echo "Installing Homebrew"
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -44,4 +51,5 @@ echo "Installing Homebrew"
 echo "Installing tools from Homebrew"
 brew bundle install
 
-open "http://firefox.com"
+echo "Installing Rust"
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
