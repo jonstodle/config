@@ -43,7 +43,8 @@ mkdir -p ~/.config
 ln -s "$(realpath alacritty)" ~/.config/alacritty
 ln -s "$(realpath fish)" ~/.config/fish
 
-open "http://firefox.com"
+echo "Install xc tools"
+xcode-select --install
 
 echo "Installing Homebrew"
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
