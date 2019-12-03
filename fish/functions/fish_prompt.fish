@@ -69,13 +69,6 @@ function fish_prompt
     test -n "$prompt_git"
     and _nim_prompt_wrapper $retc '' $prompt_git
 
-    # Battery status
-    type -q acpi
-    and test (acpi -a 2> /dev/null | string match -r off)
-    and _nim_prompt_wrapper $retc B (acpi -b | cut -d' ' -f 4-)
-
-    _nim_prompt_wrapper $retc '🔋' (pmset -g ps | string match -r "[0-9]{0,2}[0-9]%")
-
     # New line
     echo
 
