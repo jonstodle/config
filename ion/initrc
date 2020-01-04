@@ -1,0 +1,18 @@
+export PATH = "/usr/local/bin:$PATH"
+
+# Prompt
+eval $(starship init ion)
+
+fn gi ignores:[str]
+	curl -sL "https://www.gitignore.io/api/$join(ignores ",")"
+end
+
+fn md dir_path:str
+	mkdir -p "$dir_path" && cd "$dir_path"
+end
+
+alias bci = "brew cask install"
+alias bi = "brew install"
+alias c = "code ."
+alias ll = "exa -al"
+alias ta = "tmux -u a -t 0 || tmux -u"
