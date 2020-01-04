@@ -1,8 +1,12 @@
-export PATH = "/usr/local/bin:$PATH"
+# Variables
+export PATH = "/Users/jon/.cargo/bin:/usr/local/bin:$PATH"
+export CARGO_TARGET_DIR = "/Users/jon/.cargo/target"
+export EDITOR = "vim"
 
 # Prompt
 eval $(starship init ion)
 
+# Functions
 fn gi ignores:[str]
 	curl -sL "https://www.gitignore.io/api/$join(ignores ",")"
 end
@@ -11,6 +15,7 @@ fn md dir_path:str
 	mkdir -p "$dir_path" && cd "$dir_path"
 end
 
+# Aliases
 alias bci = "brew cask install"
 alias bi = "brew install"
 alias c = "code ."
