@@ -1,5 +1,5 @@
 # Variables
-export PATH = "/Users/jon/.cargo/bin:/usr/local/bin:$PATH"
+export PATH = "/Users/jon/.dotnet/tools:/Users/jon/.cargo/bin:/usr/local/bin:$PATH"
 export CARGO_TARGET_DIR = "/Users/jon/.cargo/target"
 export EDITOR = "vim"
 
