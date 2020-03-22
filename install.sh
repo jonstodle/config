@@ -40,8 +40,14 @@ killAll Dock
 
 echo "Setting up symlnks"
 mkdir -p ~/.config
-ln -s "$(realpath alacritty)" ~/.config/alacritty
-ln -s "$(realpath fish)" ~/.config/fish
+ln -s "${PWD}/alacritty" ~/.config/alacritty
+ln -s "${PWD}/fish" ~/.config/fish
+ln -s "${PWD}/ion" ~/.config/ion
+ln -s "${PWD}/karabiner" ~/.config/karabiner
+ln -s "${PWD}/gitignore" ~/.gitignore
+ln -s "${PWD}/ideavimrc" ~/.ideavimrc
+ln -s "${PWD}/tmux.conf" ~/.tmux.conf
+ln -s "${PWD}/vimrc" ~/.vimrc
 
 echo "Install xc tools"
 xcode-select --install
@@ -51,6 +57,9 @@ echo "Installing Homebrew"
 
 echo "Installing tools from Homebrew"
 brew bundle install
+
+echo "Installing Volta"
+curl https://get.volta.sh | bash
 
 echo "Installing Rust"
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
