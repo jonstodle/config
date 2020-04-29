@@ -61,6 +61,9 @@ brew bundle install
 echo "Installing Volta"
 curl https://get.volta.sh | bash
 
+echo "Installing tools via Volta"
+volta install node yarn
+
 echo "Installing zoxide"
 curl --proto '=https' --tlsv1.2 -sSf https://raw.githubusercontent.com/ajeetdsouza/zoxide/master/install.sh | sh
 
