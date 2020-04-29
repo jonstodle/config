@@ -672,3 +672,6 @@ healthchecksdb
 MigrationBackup/
 
 # End of https://www.gitignore.io/api/rider,linux,macos,windows,clion+all,monodevelop,intellij+all,visualstudio,jetbrains+all,visualstudiocode
+
+# Used for local only build scripts
+build.local
