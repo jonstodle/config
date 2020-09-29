@@ -1,0 +1,6 @@
+edit_mode = "vim"
+path = ["C:\\Users\\jonst\\.bin"]
+prompt = "echo $(starship prompt)"
+startup = ["alias l [x] { ls $x } -s"]
+table_mode = "light"
+use_starship = true
