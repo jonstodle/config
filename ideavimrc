@@ -4,3 +4,7 @@ set number
 set relativenumber
 set gdefault
 set incsearch
+set argtextobj
+set highlightedyank
+
+let g:highlightedyank_highlight_duration = "1000"
