@@ -675,3 +675,4 @@ MigrationBackup/
 
 # Used for local only build scripts
 build.local
+.env
