@@ -53,7 +53,7 @@ echo "Install xc tools"
 xcode-select --install
 
 echo "Installing Homebrew"
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
 echo "Installing tools from Homebrew"
 brew bundle install
@@ -69,3 +69,4 @@ curl --proto '=https' --tlsv1.2 -sSf https://raw.githubusercontent.com/ajeetdsou
 
 echo "Installing Rust"
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+cargo install bat exa ripgrep starship watchexec
