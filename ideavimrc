@@ -6,5 +6,6 @@ set gdefault
 set incsearch
 set argtextobj
 set highlightedyank
+set surround
 
 let g:highlightedyank_highlight_duration = "1000"
