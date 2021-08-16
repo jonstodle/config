@@ -34,6 +34,9 @@ defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
 echo "Enabling auto-hiding of Dock"
 defaults write com.apple.dock autohide -bool true
 
+echo "Enabling app switcher on all displays"
+defaults write com.apple.dock appswitcher-all-displays -bool true
+
 echo "Resetting Finder and Dock"
 killAll Finder
 killAll Dock
