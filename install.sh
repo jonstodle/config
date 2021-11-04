@@ -59,7 +59,7 @@ echo "Installing Homebrew"
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
 echo "Installing tools from Homebrew"
-brew bundle install
+brew bundle
 
 echo "Installing Volta"
 curl https://get.volta.sh | bash
