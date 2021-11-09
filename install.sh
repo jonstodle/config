@@ -51,9 +51,13 @@ ln -s "${PWD}/gitignore" ~/.gitignore
 ln -s "${PWD}/ideavimrc" ~/.ideavimrc
 ln -s "${PWD}/tmux.conf" ~/.tmux.conf
 ln -s "${PWD}/vimrc" ~/.vimrc
+ln -s "${PWD}/gitignore" ~/.gitignore
 
 echo "Install xc tools"
 xcode-select --install
+
+echo "Setting global ignore file"
+git config --global core.excludesfile ~/.gitignore
 
 echo "Installing Homebrew"
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
