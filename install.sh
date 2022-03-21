@@ -37,6 +37,9 @@ defaults write com.apple.dock autohide -bool true
 echo "Enabling app switcher on all displays"
 defaults write com.apple.dock appswitcher-all-displays -bool true
 
+echo "Disabling font smoothing"
+defaults write -g AppleFontSmoothing -int 0
+
 echo "Resetting Finder and Dock"
 killAll Finder
 killAll Dock
