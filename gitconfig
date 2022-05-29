@@ -1,0 +1,7 @@
+[user]
+	name = Jon Grythe Stødle
+	email = jon@stodle.net
+[core]
+	excludesfile = /Users/jon/.gitignore
+[init]
+	defaultBranch = main
