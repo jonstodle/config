@@ -1,0 +1,23 @@
+AUTOCOMPLETE=kick
+
+OPTIONS=autopickup:true,pickup_types:$=/?!
+
+OPTIONS=boulder:0, dark_room:true
+
+OPTIONS=catname:Maurice, dogname:K9, horsename: Shadowfax, hilite_pet:true
+
+OPTIONS=force_invmenu=true
+
+OPTIONS=fruit:Banana
+
+OPTIONS=hitpointbar=true,time=true
+
+OPTIONS=msg_window:combination
+
+OPTIONS=name:Jon, race:dwarf, role:Valkyrie
+
+OPTIONS=number_pad:0
+
+OPTIONS=pushweapon:true
+
+OPTIONS=large_font:true
