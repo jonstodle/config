@@ -1,16 +1,16 @@
 AUTOCOMPLETE=kick
 
-OPTIONS=autopickup:true,pickup_types:$=/?!
+OPTIONS=autopickup:true, pickup_types:$=/?!
 
-OPTIONS=boulder:0, dark_room:true
+OPTIONS=boulder:0, dark_room:true, litcorridor:true, map_mode:tiles
 
 OPTIONS=catname:Maurice, dogname:K9, horsename: Shadowfax, hilite_pet:true
 
-OPTIONS=force_invmenu=true
+OPTIONS=force_invmenu:true
 
 OPTIONS=fruit:Banana
 
-OPTIONS=hitpointbar=true,time=true
+OPTIONS=hitpointbar=true,time=true, menucolors
 
 OPTIONS=msg_window:combination
 
