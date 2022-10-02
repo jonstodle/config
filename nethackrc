@@ -2,7 +2,7 @@ AUTOCOMPLETE=kick
 
 OPTIONS=autopickup:true, pickup_types:$=/?!
 
-OPTIONS=boulder:0, dark_room:true, litcorridor:true, map_mode:tiles
+OPTIONS=boulder:0, dark_room:true, lit_corridor:true, map_mode:tiles
 
 OPTIONS=catname:Maurice, dogname:K9, horsename: Shadowfax, hilite_pet:true
 
@@ -14,7 +14,7 @@ OPTIONS=hitpointbar=true,time=true, menucolors
 
 OPTIONS=msg_window:combination
 
-OPTIONS=name:Jon, race:dwarf, role:Valkyrie
+OPTIONS=name:braakVerk, race:dwarf, role:Valkyrie, gender:female, align:lawful
 
 OPTIONS=number_pad:0
 
