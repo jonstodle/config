@@ -4,6 +4,8 @@ set number
 set relativenumber
 set gdefault
 set incsearch
+set scrolloff=2
+set sidescrolloff=10
 
 set tabstop=4
 set shiftwidth=4

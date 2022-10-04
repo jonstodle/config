@@ -7,5 +7,7 @@ set incsearch
 set argtextobj
 set highlightedyank
 set surround
+set scrolloff=2
+set sidescrolloff=10
 
 let g:highlightedyank_highlight_duration = "1000"
