@@ -11,3 +11,9 @@ set scrolloff=2
 set sidescrolloff=10
 
 let g:highlightedyank_highlight_duration = "1000"
+
+# Set shortcut handlers
+sethandler <C-A> n-v:vim i:ide
+sethandler <C-D> n-v:vim
+sethandler <C-G> a:ide
+sethandler <C-O> a:ide
