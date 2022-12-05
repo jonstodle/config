@@ -9,6 +9,7 @@ set highlightedyank
 set surround
 set scrolloff=2
 set sidescrolloff=10
+set NERDTree
 
 let g:highlightedyank_highlight_duration = "1000"
 
